@@ -1,0 +1,67 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 840px;
+}
+.wrapper video {
+  width: 100%;
+}
+.wrapper svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.wrapper svg text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.wrapper svg > rect {
+  -webkit-mask: url(#mask);
+  mask: url(#mask);
+}
+.wrapper svg rect {
+  fill: #fff;
+}
+
+
+
+.wrapper:before, .wrapper:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #fff;
+}
+.wrapper:before {
+  left: -9px;
+}
+.wrapper:after {
+  right: -5px;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+h1 { font-family: 'Me', sans-serif; font-size: 275px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center;margin-top:0 }
+h2 {  font-family: 'Open Sans', sans-serif; font-size: 30px; font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: center; }
+p {  font-family: 'Helvetica Neue', sans-serif; font-size: 14px; line-height: 24px; margin: 0 0 24px; text-align: center; text-justify: inter-word; }
+
+
+.underline{
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+.underline:hover {
+  background-size: 100% 88%;
+}
